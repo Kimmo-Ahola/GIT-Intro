@@ -1,1 +1,7 @@
-Crate table Demo();
+Crate table Demo(
+  DemoID int identity(1, 2) PK
+  FirstName string(255) Not NULL
+);
+
+INSERT INTO DEMO
+VALUES(12, 'Kimmo');
